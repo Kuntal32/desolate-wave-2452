@@ -1,8 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Unity Web Player | Infinity 2</title>
+	
+		
+		<title>Infinity 2</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta property="og:url"           content="https://obscure-lowlands-18569.herokuapp.com/" />
+	<meta property="og:type"          content="Game" />
+	<meta property="og:title"         content="Infinity 2" />
+	<meta property="og:description"   content="Infinite Runner" />
+	<meta property="og:image"         content="https://obscure-lowlands-18569.herokuapp.com/logo.png" />
+
 		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
 		<script type="text/javascript">
 		<!--
@@ -15,8 +25,8 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 960, 
-				height: 600,
+				width: 900, 
+				height: 550,
 				params: { enableDebugging:"0" }
 				
 			};
@@ -59,7 +69,15 @@
 				u.initPlugin(jQuery("#unityPlayer")[0], "app/deploy.unity3d");
 			});
 		-->
+		(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1664294867146058";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 		</script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<style type="text/css">
 		<!--
 		body {
@@ -116,7 +134,9 @@
 		</style>
 	</head>
 	<body>
-		<p class="header"><span>Unity Web Player | </span>Infinity 2</p>
+	<div id="fb-root"></div>
+		<h3>Infinity 2</h3>
+		<p>Note:Install Unity web Player to play and also you need to use unity web player supported browser.</p>
 		<div class="content">
 			<div id="unityPlayer">
 				<div class="missing">
@@ -130,7 +150,9 @@
 					</a>
 				</div>
 			</div>
+			
+			<div class="fb-like" data-href="https://obscure-lowlands-18569.herokuapp.com/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 		</div>
-		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+	
 	</body>
 </html>
