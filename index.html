@@ -130,15 +130,27 @@
 			height: 600px;
 			width: 960px;
 		}
+		
 		-->
+		.fb-share-button{
+			margin-bottom: 8px;
+		}
 		</style>
 	</head>
 	<body>
 	<div id="fb-root"></div>
 		<h3>Infinity 2</h3>
 		<p>Note: Install Unity web Player to play and also you need to use unity web player supported browser.</p>
-		<div class="content">
-			<div id="unityPlayer">
+	<div >	
+			<div class="fb-like" data-href="https://obscure-lowlands-18569.herokuapp.com/" data-layout="standard" 
+				data-action="like" 
+				data-show-faces="true"></div>
+			<div   class="fb-share-button" data-href="https://obscure-lowlands-18569.herokuapp.com/" data-layout="button_count">
+	
+	</div>
+	</div>
+<div class="content">
+			<div id="unityPlayer" style="margin-left:50px;">
 				<div class="missing">
 					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
 						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
@@ -151,7 +163,7 @@
 				</div>
 			</div>
 			
-			<div class="fb-like" data-href="https://obscure-lowlands-18569.herokuapp.com/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+			
 		</div>
 	
 	</body>
